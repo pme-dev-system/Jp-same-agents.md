@@ -9,7 +9,7 @@ interface ExamplesSectionProps {
 
 export default function ExamplesSection({ contributorsByRepo }: ExamplesSectionProps) {
   return (
-    <Section id="examples" title="Examples" className="py-12" center>
+    <Section id="examples" title="使用例" className="py-12" center>
       {/* Wide code example */}
       <div className="mb-4">
         <CodeExample compact />
