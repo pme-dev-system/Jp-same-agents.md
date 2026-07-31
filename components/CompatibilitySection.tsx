@@ -216,7 +216,7 @@ function LogoItem({
         </span>
         {from ? (
           <span className="text-sm text-gray-500 dark:text-gray-400">
-            <span className="font-light">from</span>{" "}
+            <span className="font-light">提供:</span>{" "}
             <span className="font-semibold">{from}</span>
           </span>
         ) : null}
@@ -327,15 +327,15 @@ export default function CompatibilitySection() {
   return (
     <Section
       id="compatibility"
-      title="One AGENTS.md works across many agents"
+      title="1つのAGENTS.mdが、多くのエージェントで動く"
       className={`py-12 px-0 ${showGrid ? "" : "!px-0"}`}
       center
       maxWidthClass={showGrid ? "max-w-3xl" : "max-w-none"}
     >
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-xl font-light text-gray-500 dark:text-gray-400 px-8">
-          Your agent definitions are compatible with a growing ecosystem of AI
-          coding agents and tools:
+          あなたのエージェント定義は、拡大し続けるAIコーディングエージェント・
+          ツールのエコシステムと互換性があります。
         </p>
       </div>
       {showGrid ? (
@@ -370,7 +370,7 @@ export default function CompatibilitySection() {
           aria-controls="supported-agents"
           aria-expanded={showGrid}
         >
-          {showGrid ? "Collapse supported agents" : "View all supported agents"}
+          {showGrid ? "対応エージェントを閉じる" : "対応エージェントをすべて見る"}
         </button>
       </div>
     </Section>

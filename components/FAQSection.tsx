@@ -10,30 +10,30 @@ interface FAQItem {
 export default function FAQ() {
   const faqItems: FAQItem[] = [
     {
-      question: "Are there required fields?",
+      question: "必須のフィールドはありますか?",
       answer:
-        "No. AGENTS.md is just standard Markdown. Use any headings you like; the agent simply parses the text you provide.",
+        "ありません。AGENTS.md はただの標準的なMarkdownです。好きな見出しを自由に使ってください。エージェントは記載されたテキストを解析するだけです。",
     },
     {
-      question: "What if instructions conflict?",
+      question: "指示が矛盾していたらどうなりますか?",
       answer:
-        "The closest AGENTS.md to the edited file wins; explicit user chat prompts override everything.",
+        "編集対象のファイルに最も近いAGENTS.mdが優先されます。ただし、ユーザーがチャットで明示的に指示した内容がすべてに優先されます。",
     },
     {
-      question: "Will the agent run testing commands found in AGENTS.md automatically?",
+      question: "AGENTS.mdに書かれたテストコマンドをエージェントは自動で実行しますか?",
       answer:
-        "Yes—if you list them. The agent will attempt to execute relevant programmatic checks and fix failures before finishing the task.",
+        "記載していれば実行します。エージェントはタスクを完了する前に、該当するプログラムによるチェックを実行し、失敗があれば修正を試みます。",
     },
     {
-      question: "Can I update it later?",
-      answer: "Absolutely. Treat AGENTS.md as living documentation.",
+      question: "後から更新してもいいですか?",
+      answer: "もちろんです。AGENTS.md は常に更新され続けるドキュメントとして扱ってください。",
     },
     {
-      question: "How do I migrate existing docs to AGENTS.md?",
+      question: "既存のドキュメントをAGENTS.mdに移行するには?",
       answer: (
         <>
           <p className="mb-2">
-            Rename existing files to AGENTS.md and create symbolic links for backward compatibility:
+            既存のファイルをAGENTS.mdにリネームし、後方互換性のためにシンボリックリンクを作成します。
           </p>
           <div className="w-full flex justify-center">
             <CodeExample
@@ -47,11 +47,11 @@ export default function FAQ() {
       ),
     },
     {
-      question: "How do I configure Aider?",
+      question: "Aiderの設定方法は?",
       answer: (
         <>
           <p className="mb-2">
-            Configure Aider to use AGENTS.md in <code>.aider.conf.yml</code>:
+            <code>.aider.conf.yml</code> でAGENTS.mdを使うようにAiderを設定します。
           </p>
           <div className="w-full flex justify-center">
             <CodeExample
@@ -65,11 +65,11 @@ export default function FAQ() {
       ),
     },
     {
-      question: "How do I configure Gemini CLI?",
+      question: "Gemini CLIの設定方法は?",
       answer: (
         <>
           <p className="mb-2">
-            Configure Gemini CLI to use AGENTS.md in <code>.gemini/settings.json</code>:
+            <code>.gemini/settings.json</code> でAGENTS.mdを使うようにGemini CLIを設定します。
           </p>
           <div className="w-full flex justify-center">
             <CodeExample
@@ -91,7 +91,7 @@ export default function FAQ() {
   return (
     <Section
       id="faq"
-      title="FAQ"
+      title="よくある質問"
       className="py-20"
       center
       maxWidthClass="max-w-3xl"

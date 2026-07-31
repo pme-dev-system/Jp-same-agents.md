@@ -151,7 +151,7 @@ export default function CodeExample({
           className={`absolute right-3 p-2 rounded-md bg-transparent text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors z-10 cursor-pointer ${
             centerVertically ? "top-1/2 -translate-y-1/2" : "top-3"
           }`}
-          aria-label="Copy to clipboard"
+          aria-label="クリップボードにコピー"
         >
           {copied ? (
             <svg
@@ -198,7 +198,7 @@ export default function CodeExample({
     <section className="px-6 pt-10 pb-24 bg-gray-50 dark:bg-gray-900/40">
       <div className="max-w-5xl mx-auto flex flex-col gap-6">
         <h2 className="text-3xl font-semibold tracking-tight">
-          AGENTS.md in action
+          実際のAGENTS.md
         </h2>
         {content}
       </div>

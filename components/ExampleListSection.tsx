@@ -22,24 +22,24 @@ interface RepoCardProps {
 const REPOS: RepoCardProps[] = [
   {
     name: "openai/codex",
-    description: "General-purpose CLI tooling for AI coding agents.",
+    description: "AIコーディングエージェント向けの汎用CLIツール。",
     language: "Rust",
   },
   {
     name: "apache/airflow",
     description:
-      "Platform to programmatically author, schedule, and monitor workflows.",
+      "ワークフローをプログラムで作成・スケジュール・監視するためのプラットフォーム。",
     language: "Python",
   },
   {
     name: "temporalio/sdk-java",
     description:
-      "Java SDK for Temporal, workflow orchestration defined in code.",
+      "コードでワークフローオーケストレーションを定義する、Temporal向けJava SDK。",
     language: "Java",
   },
   {
     name: "PlutoLang/Pluto",
-    description: "A superset of Lua 5.4 with a focus on general-purpose programming.",
+    description: "汎用プログラミングに重点を置いた、Lua 5.4のスーパーセット。",
     language: "C++",
   },
 ];
@@ -76,7 +76,7 @@ const InnerGrid = ({
         href="https://github.com/search?q=path%3AAGENTS.md+NOT+is%3Afork+NOT+is%3Aarchived&type=code"
         className="text-base font-medium underline hover:no-underline"
       >
-        View 60k+ examples on GitHub
+        GitHubで6万件以上の使用例を見る
       </a>
     </div>
   </>
@@ -97,7 +97,7 @@ const ExampleListSection = ({
   return (
     <section className="px-6 pb-12 -mt-36">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6">Who uses AGENTS.md?</h2>
+        <h2 className="text-3xl font-semibold mb-6">AGENTS.mdは誰が使っているのか?</h2>
         <InnerGrid contributorsByRepo={contributorsByRepo} />
       </div>
     </section>

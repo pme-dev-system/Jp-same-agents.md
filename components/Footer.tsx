@@ -6,11 +6,11 @@ export default function Footer() {
       <p>
         Copyright © AGENTS.md a Series of LF Projects, LLC
         <br />
-        For web site terms of use, trademark policy and other project policies please see{" "}
+        ウェブサイトの利用規約、商標ポリシー、その他のプロジェクトポリシーについては{" "}
         <a href="https://lfprojects.org" target="_blank" className="underline hover:no-underline">
           https://lfprojects.org
         </a>
-        .
+        {" "}をご覧ください。
       </p>
     </footer>
   );

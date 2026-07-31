@@ -4,38 +4,38 @@ import React from "react";
 export default function HowToUseSection() {
   const steps = [
     {
-      title: "Add AGENTS.md",
+      title: "AGENTS.mdを追加する",
       body: (
         <>
-          Create an AGENTS.md file at the root of the repository. Most
-          coding agents can even scaffold one for you if you ask nicely.
+          リポジトリのルートにAGENTS.mdファイルを作成します。多くの
+          コーディングエージェントは、丁寧にお願いすれば雛形を作ってくれます。
         </>
       ),
     },
     {
-      title: "Cover what matters",
+      title: "重要な項目をカバーする",
       body: (
         <>
-          <p className="mb-2">Add sections that help an agent work effectively with your project. Popular choices:</p>
+          <p className="mb-2">エージェントがプロジェクトで効果的に作業できるようなセクションを追加します。よく使われる項目:</p>
           <ul className="list-disc list-inside ml-4 space-y-1">
-            <li>Project overview</li>
-            <li>Build and test commands</li>
-            <li>Code style guidelines</li>
-            <li>Testing instructions</li>
-            <li>Security considerations</li>
+            <li>プロジェクトの概要</li>
+            <li>ビルド・テストコマンド</li>
+            <li>コードスタイルのガイドライン</li>
+            <li>テストの実行方法</li>
+            <li>セキュリティ上の注意点</li>
           </ul>
         </>
       ),
     },
     {
-      title: "Add extra instructions",
-      body: "Commit messages or pull request guidelines, security gotchas, large datasets, deployment steps: anything you’d tell a new teammate belongs here too.",
+      title: "追加の指示を書く",
+      body: "コミットメッセージやプルリクエストのガイドライン、セキュリティ上の落とし穴、大きなデータセット、デプロイ手順など、新しいチームメンバーに伝えるようなことは、ここにも書いておきましょう。",
     },
     {
-      title: "Large monorepo? Use nested AGENTS.md files for subprojects",
+      title: "大きなモノレポの場合はサブプロジェクトごとにネストしたAGENTS.mdを使う",
       body: (
         <>
-          Place another AGENTS.md inside each package. Agents automatically read the nearest file in the directory tree, so the closest one takes precedence and every subproject can ship tailored instructions. For example, at time of writing the main OpenAI repo has 88 AGENTS.md files.
+          各パッケージの中に別のAGENTS.mdを置きます。エージェントはディレクトリツリー内で最も近いファイルを自動的に読み込むため、最も近いものが優先され、各サブプロジェクトはそれぞれに合わせた指示を提供できます。例えば、執筆時点でOpenAIのメインリポジトリには88個のAGENTS.mdファイルがあります。
         </>
       ),
     },
@@ -44,7 +44,7 @@ export default function HowToUseSection() {
 
   return (
     <Section
-      title="How to use AGENTS.md?"
+      title="AGENTS.mdの使い方"
       className="py-12"
       center
       maxWidthClass="max-w-3xl"
